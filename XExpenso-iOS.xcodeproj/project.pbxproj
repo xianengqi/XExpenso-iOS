@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EFA3F827D55361186FE945A /* Pods_XExpenso_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71EC0DA215512EDB471E58F /* Pods_XExpenso_iOS.framework */; };
-		C30759A026A2EFDB00221FDA /* XExpenso_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307599F26A2EFDB00221FDA /* XExpenso_iOSApp.swift */; };
+		C30759A026A2EFDB00221FDA /* XExpensoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307599F26A2EFDB00221FDA /* XExpensoApp.swift */; };
 		C30759A226A2EFDB00221FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30759A126A2EFDB00221FDA /* ContentView.swift */; };
 		C30759A426A2EFDD00221FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30759A326A2EFDD00221FDA /* Assets.xcassets */; };
 		C30759A726A2EFDD00221FDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30759A626A2EFDD00221FDA /* Preview Assets.xcassets */; };
@@ -18,7 +18,7 @@
 		298B19B335C83A0C25BE3B04 /* Pods-XExpenso-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XExpenso-iOS.release.xcconfig"; path = "Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C304BC4326A2F24F000FF2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C307599C26A2EFDB00221FDA /* XExpenso-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XExpenso-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C307599F26A2EFDB00221FDA /* XExpenso_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XExpenso_iOSApp.swift; sourceTree = "<group>"; };
+		C307599F26A2EFDB00221FDA /* XExpensoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XExpensoApp.swift; sourceTree = "<group>"; };
 		C30759A126A2EFDB00221FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C30759A326A2EFDD00221FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30759A626A2EFDD00221FDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		C307599E26A2EFDB00221FDA /* XExpenso-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C307599F26A2EFDB00221FDA /* XExpenso_iOSApp.swift */,
+				C307599F26A2EFDB00221FDA /* XExpensoApp.swift */,
 				C30759A126A2EFDB00221FDA /* ContentView.swift */,
 				C30759A326A2EFDD00221FDA /* Assets.xcassets */,
 				C30759A526A2EFDD00221FDA /* Preview Content */,
@@ -208,7 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30759A226A2EFDB00221FDA /* ContentView.swift in Sources */,
-				C30759A026A2EFDB00221FDA /* XExpenso_iOSApp.swift in Sources */,
+				C30759A026A2EFDB00221FDA /* XExpensoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

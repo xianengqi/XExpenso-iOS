@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct XExpenso_iOSApp: App {
+struct XExpensoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
