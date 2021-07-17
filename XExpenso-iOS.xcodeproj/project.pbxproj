@@ -103,6 +103,7 @@
 				C307599826A2EFDB00221FDA /* Sources */,
 				C307599926A2EFDB00221FDA /* Frameworks */,
 				C307599A26A2EFDB00221FDA /* Resources */,
+				3F87AAD29A7B7A0D8B14CE29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +160,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3F87AAD29A7B7A0D8B14CE29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DD1663BA1CC82ABA28B43B3E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

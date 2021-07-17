@@ -6,5 +6,7 @@ target 'XExpenso-iOS' do
   use_frameworks!
 
   # Pods for XExpenso-iOS
+  pod 'lottie-ios'
+  pod 'Charts'
 
 end
