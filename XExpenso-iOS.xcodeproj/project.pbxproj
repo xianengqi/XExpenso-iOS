@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EFA3F827D55361186FE945A /* Pods_XExpenso_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71EC0DA215512EDB471E58F /* Pods_XExpenso_iOS.framework */; };
 		C30759A026A2EFDB00221FDA /* XExpenso_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307599F26A2EFDB00221FDA /* XExpenso_iOSApp.swift */; };
 		C30759A226A2EFDB00221FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30759A126A2EFDB00221FDA /* ContentView.swift */; };
 		C30759A426A2EFDD00221FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30759A326A2EFDD00221FDA /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		298B19B335C83A0C25BE3B04 /* Pods-XExpenso-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XExpenso-iOS.release.xcconfig"; path = "Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C307599C26A2EFDB00221FDA /* XExpenso-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XExpenso-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C307599F26A2EFDB00221FDA /* XExpenso_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XExpenso_iOSApp.swift; sourceTree = "<group>"; };
 		C30759A126A2EFDB00221FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C30759A326A2EFDD00221FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30759A626A2EFDD00221FDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E68B90D239E0CFC34BE20E1A /* Pods-XExpenso-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XExpenso-iOS.debug.xcconfig"; path = "Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E71EC0DA215512EDB471E58F /* Pods_XExpenso_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XExpenso_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFA3F827D55361186FE945A /* Pods_XExpenso_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84468F57196BEF43B227A18C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E68B90D239E0CFC34BE20E1A /* Pods-XExpenso-iOS.debug.xcconfig */,
+				298B19B335C83A0C25BE3B04 /* Pods-XExpenso-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C307599326A2EFDB00221FDA = {
 			isa = PBXGroup;
 			children = (
 				C307599E26A2EFDB00221FDA /* XExpenso-iOS */,
 				C307599D26A2EFDB00221FDA /* Products */,
+				84468F57196BEF43B227A18C /* Pods */,
+				E3BCED1B076941A2CEECFD7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E3BCED1B076941A2CEECFD7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E71EC0DA215512EDB471E58F /* Pods_XExpenso_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C30759AA26A2EFDD00221FDA /* Build configuration list for PBXNativeTarget "XExpenso-iOS" */;
 			buildPhases = (
+				DD1663BA1CC82ABA28B43B3E /* [CP] Check Pods Manifest.lock */,
 				C307599826A2EFDB00221FDA /* Sources */,
 				C307599926A2EFDB00221FDA /* Frameworks */,
 				C307599A26A2EFDB00221FDA /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD1663BA1CC82ABA28B43B3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XExpenso-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C307599826A2EFDB00221FDA /* Sources */ = {
@@ -263,6 +314,7 @@
 		};
 		C30759AB26A2EFDD00221FDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68B90D239E0CFC34BE20E1A /* Pods-XExpenso-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,6 +345,7 @@
 		};
 		C30759AC26A2EFDD00221FDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298B19B335C83A0C25BE3B04 /* Pods-XExpenso-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
