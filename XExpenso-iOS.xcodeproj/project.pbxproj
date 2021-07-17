@@ -16,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		298B19B335C83A0C25BE3B04 /* Pods-XExpenso-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XExpenso-iOS.release.xcconfig"; path = "Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C304BC4326A2F24F000FF2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C307599C26A2EFDB00221FDA /* XExpenso-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XExpenso-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C307599F26A2EFDB00221FDA /* XExpenso_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XExpenso_iOSApp.swift; sourceTree = "<group>"; };
 		C30759A126A2EFDB00221FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 				E68B90D239E0CFC34BE20E1A /* Pods-XExpenso-iOS.debug.xcconfig */,
 				298B19B335C83A0C25BE3B04 /* Pods-XExpenso-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -72,6 +72,7 @@
 				C30759A126A2EFDB00221FDA /* ContentView.swift */,
 				C30759A326A2EFDD00221FDA /* Assets.xcassets */,
 				C30759A526A2EFDD00221FDA /* Preview Content */,
+				C304BC4326A2F24F000FF2AB /* Info.plist */,
 			);
 			path = "XExpenso-iOS";
 			sourceTree = "<group>";
@@ -341,7 +342,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"XExpenso-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZD8RCDB2Y6;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "/Users/xianengqi/Work/XExpenso-iOS/XExpenso-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -372,7 +374,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"XExpenso-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZD8RCDB2Y6;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "/Users/xianengqi/Work/XExpenso-iOS/XExpenso-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
