@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1EFA3F827D55361186FE945A /* Pods_XExpenso_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71EC0DA215512EDB471E58F /* Pods_XExpenso_iOS.framework */; };
 		C30759A026A2EFDB00221FDA /* XExpensoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307599F26A2EFDB00221FDA /* XExpensoApp.swift */; };
-		C30759A226A2EFDB00221FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30759A126A2EFDB00221FDA /* ContentView.swift */; };
+		C30759A226A2EFDB00221FDA /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30759A126A2EFDB00221FDA /* ExpenseView.swift */; };
 		C30759A726A2EFDD00221FDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30759A626A2EFDD00221FDA /* Preview Assets.xcassets */; };
 		C367AB3226A42F37003C7284 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C367AB3126A42F36003C7284 /* Configs.swift */; };
 		C367AB3526A4387F003C7284 /* empty-face.json in Resources */ = {isa = PBXBuildFile; fileRef = C367AB3426A4387F003C7284 /* empty-face.json */; };
@@ -32,7 +32,7 @@
 		C304BC4326A2F24F000FF2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C307599C26A2EFDB00221FDA /* XExpenso-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XExpenso-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C307599F26A2EFDB00221FDA /* XExpensoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XExpensoApp.swift; sourceTree = "<group>"; };
-		C30759A126A2EFDB00221FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C30759A126A2EFDB00221FDA /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
 		C30759A626A2EFDD00221FDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C367AB3126A42F36003C7284 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		C367AB3426A4387F003C7284 /* empty-face.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "empty-face.json"; sourceTree = "<group>"; };
@@ -94,13 +94,13 @@
 		C307599E26A2EFDB00221FDA /* XExpenso-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C367AB5226A43F27003C7284 /* Expense */,
 				C367AB3626A438C9003C7284 /* Inter */,
 				C367AB3326A4387F003C7284 /* Animations */,
 				C307599F26A2EFDB00221FDA /* XExpensoApp.swift */,
 				C367AB4D26A43A67003C7284 /* Assets.xcassets */,
 				C367AB3126A42F36003C7284 /* Configs.swift */,
 				C367AB4F26A43C8D003C7284 /* XExpenseCD.xcdatamodeld */,
-				C30759A126A2EFDB00221FDA /* ContentView.swift */,
 				C304BC4326A2F24F000FF2AB /* Info.plist */,
 				C30759A526A2EFDD00221FDA /* Preview Content */,
 			);
@@ -138,6 +138,14 @@
 				C367AB4026A438C9003C7284 /* Inter-SemiBold.ttf */,
 			);
 			path = Inter;
+			sourceTree = "<group>";
+		};
+		C367AB5226A43F27003C7284 /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				C30759A126A2EFDB00221FDA /* ExpenseView.swift */,
+			);
+			path = Expense;
 			sourceTree = "<group>";
 		};
 		E3BCED1B076941A2CEECFD7D /* Frameworks */ = {
@@ -273,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30759A226A2EFDB00221FDA /* ContentView.swift in Sources */,
+				C30759A226A2EFDB00221FDA /* ExpenseView.swift in Sources */,
 				C30759A026A2EFDB00221FDA /* XExpensoApp.swift in Sources */,
 				C367AB5126A43C8D003C7284 /* XExpenseCD.xcdatamodeld in Sources */,
 				C367AB3226A42F37003C7284 /* Configs.swift in Sources */,
