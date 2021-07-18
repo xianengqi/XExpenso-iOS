@@ -12,6 +12,7 @@
 		C30759A226A2EFDB00221FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30759A126A2EFDB00221FDA /* ContentView.swift */; };
 		C30759A426A2EFDD00221FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30759A326A2EFDD00221FDA /* Assets.xcassets */; };
 		C30759A726A2EFDD00221FDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30759A626A2EFDD00221FDA /* Preview Assets.xcassets */; };
+		C367AB3226A42F37003C7284 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C367AB3126A42F36003C7284 /* Configs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C30759A126A2EFDB00221FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C30759A326A2EFDD00221FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30759A626A2EFDD00221FDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C367AB3126A42F36003C7284 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		E68B90D239E0CFC34BE20E1A /* Pods-XExpenso-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XExpenso-iOS.debug.xcconfig"; path = "Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E71EC0DA215512EDB471E58F /* Pods_XExpenso_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XExpenso_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				C307599F26A2EFDB00221FDA /* XExpensoApp.swift */,
+				C367AB3126A42F36003C7284 /* Configs.swift */,
 				C30759A126A2EFDB00221FDA /* ContentView.swift */,
 				C30759A326A2EFDD00221FDA /* Assets.xcassets */,
 				C30759A526A2EFDD00221FDA /* Preview Content */,
@@ -209,6 +212,7 @@
 			files = (
 				C30759A226A2EFDB00221FDA /* ContentView.swift in Sources */,
 				C30759A026A2EFDB00221FDA /* XExpensoApp.swift in Sources */,
+				C367AB3226A42F37003C7284 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
