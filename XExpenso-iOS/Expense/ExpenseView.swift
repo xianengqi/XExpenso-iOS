@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct ExpenseView: View {
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    // CoreData
+    @Environment(\.managedObjectContext) var managedObjectContext
+//    @FetchRequest(fetchRequest: XExpenseCD.getAllExpenseDat, animation: <#T##Animation?#>)
+    
+    
+    @State private var displayAbout = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ZStack {
+                Color.primary_color.edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    NavigationLink(destination: NavigationLazyView(AboutView()), isActive: $displayAbout, label: {})
+                }.edgesIgnoringSafeArea(.all)
+            }.navigationBarHidden(true)
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

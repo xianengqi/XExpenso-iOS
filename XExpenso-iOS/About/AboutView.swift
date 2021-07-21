@@ -16,10 +16,42 @@ struct AboutView: View {
                 Color.primary_color.edgesIgnoringSafeArea(.all)
                 
                 VStack {
+                    ToolbarModelView(title: "关于") { self.presentationMode.wrappedValue.dismiss() }
                     
-                }
+                    Spacer().frame(height: 80)
+                    
+                    Image("pie_icon").resizable().frame(width: 120.0, height: 120.0)
+                    TextView(text: "\(APP_NAME)", type: .h6).foregroundColor(Color.text_primary_color).padding(.top, 20)
+                    TextView(text: "v\(Bundle.main.infoDictionary!["CFBundleShortVersionString"] ?? "")", type: .body_2)
+                        .foregroundColor(Color.text_secondary_color).padding(.top, 2)
+                    
+                    VStack(spacing: 20) {
+                        VStack(alignment: .leading, spacing: 4) {
+                            HStack { Spacer() }
+                            TextView(text: "归 & “许可证", type: .overline).foregroundColor(Color.text_primary_color)
+                            TextView(text: "Licensed Under Apache License 2.0", type: .body_2).foregroundColor(Color.text_secondary_color).padding(.top, 2)
+                        }
+                        VStack(alignment: .leading, spacing: 4) {
+                            HStack { Spacer() }
+                            TextView(text: "访问", type: .overline).foregroundColor(Color.text_primary_color)
+                            TextView(text: "\(APP_LINK)", type: .body_2)
+                                .foregroundColor(Color.main_color).padding(.top, 2)
+                                .onTapGesture {
+                                    if let url: URL = URL(string: APP_LINK) {
+                                        UIApplication.shared.open(url)
+                                    }
+                                }
+                        }
+                    }.padding(20)
+                    
+                    Spacer()
+                }.edgesIgnoringSafeArea(.all)
             }
+            .navigationBarHidden(true)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
