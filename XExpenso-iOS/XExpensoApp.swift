@@ -30,7 +30,7 @@ struct XExpensoApp: App {
     }
     
     var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "XExpenseCD")
+        let container = NSPersistentContainer(name: "XExpense")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("未解决的错误 \(error), \(error.userInfo)")

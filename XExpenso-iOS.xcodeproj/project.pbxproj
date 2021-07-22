@@ -29,7 +29,8 @@
 		C367AB4926A438C9003C7284 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C367AB3F26A438C9003C7284 /* Inter-Black.ttf */; };
 		C367AB4A26A438C9003C7284 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C367AB4026A438C9003C7284 /* Inter-SemiBold.ttf */; };
 		C367AB4E26A43A68003C7284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C367AB4D26A43A67003C7284 /* Assets.xcassets */; };
-		C367AB5126A43C8D003C7284 /* XExpenseCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C367AB4F26A43C8D003C7284 /* XExpenseCD.xcdatamodeld */; };
+		C367AB5126A43C8D003C7284 /* XExpense.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C367AB4F26A43C8D003C7284 /* XExpense.xcdatamodeld */; };
+		C3CF5D8A26A987500076C6E7 /* XExpenseCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CF5D8926A987500076C6E7 /* XExpenseCD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C367AB4026A438C9003C7284 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		C367AB4D26A43A67003C7284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C367AB5026A43C8D003C7284 /* XExpenseCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XExpenseCD.xcdatamodel; sourceTree = "<group>"; };
+		C3CF5D8926A987500076C6E7 /* XExpenseCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XExpenseCD.swift; sourceTree = "<group>"; };
 		E68B90D239E0CFC34BE20E1A /* Pods-XExpenso-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XExpenso-iOS.debug.xcconfig"; path = "Target Support Files/Pods-XExpenso-iOS/Pods-XExpenso-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E71EC0DA215512EDB471E58F /* Pods_XExpenso_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XExpenso_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,12 +110,13 @@
 				C367AB3626A438C9003C7284 /* Inter */,
 				C367AB3326A4387F003C7284 /* Animations */,
 				C307599F26A2EFDB00221FDA /* XExpensoApp.swift */,
+				C3CF5D8826A9872D0076C6E7 /* CoreData */,
 				C355BC6A26A6DB6E004809CE /* Helpers */,
 				C355BC6726A6DA0C004809CE /* About */,
 				C355BC6626A6D9C0004809CE /* ExpenseSettings */,
 				C367AB4D26A43A67003C7284 /* Assets.xcassets */,
 				C367AB3126A42F36003C7284 /* Configs.swift */,
-				C367AB4F26A43C8D003C7284 /* XExpenseCD.xcdatamodeld */,
+				C367AB4F26A43C8D003C7284 /* XExpense.xcdatamodeld */,
 				C304BC4326A2F24F000FF2AB /* Info.plist */,
 				C30759A526A2EFDD00221FDA /* Preview Content */,
 			);
@@ -185,6 +188,14 @@
 				C30759A126A2EFDB00221FDA /* ExpenseView.swift */,
 			);
 			path = Expense;
+			sourceTree = "<group>";
+		};
+		C3CF5D8826A9872D0076C6E7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF5D8926A987500076C6E7 /* XExpenseCD.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		E3BCED1B076941A2CEECFD7D /* Frameworks */ = {
@@ -323,8 +334,9 @@
 				C34452C726A82DB30016148E /* InterFontModifier.swift in Sources */,
 				C30759A226A2EFDB00221FDA /* ExpenseView.swift in Sources */,
 				C34452C526A82C3E0016148E /* TextView.swift in Sources */,
+				C3CF5D8A26A987500076C6E7 /* XExpenseCD.swift in Sources */,
 				C30759A026A2EFDB00221FDA /* XExpensoApp.swift in Sources */,
-				C367AB5126A43C8D003C7284 /* XExpenseCD.xcdatamodeld in Sources */,
+				C367AB5126A43C8D003C7284 /* XExpense.xcdatamodeld in Sources */,
 				C355BC6E26A6DBA0004809CE /* ColorExtension.swift in Sources */,
 				C367AB3226A42F37003C7284 /* Configs.swift in Sources */,
 				C355BC6926A6DA2A004809CE /* AboutView.swift in Sources */,
@@ -539,13 +551,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C367AB4F26A43C8D003C7284 /* XExpenseCD.xcdatamodeld */ = {
+		C367AB4F26A43C8D003C7284 /* XExpense.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				C367AB5026A43C8D003C7284 /* XExpenseCD.xcdatamodel */,
 			);
 			currentVersion = C367AB5026A43C8D003C7284 /* XExpenseCD.xcdatamodel */;
-			path = XExpenseCD.xcdatamodeld;
+			path = XExpense.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
