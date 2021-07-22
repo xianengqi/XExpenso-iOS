@@ -11,7 +11,7 @@ extension Color {
     static let main_color = Color("main_color")
     static let primary_color = Color("primary")
     static let secondary_color = Color("secondary")
-    static let text_primary_color = Color("textPrimary_32_F2")
+    static let text_primary_color = Color("textPrimary_33_F2")
     static let text_secondary_color = Color("textSecondary_4F_F2")
     static let placeholder_color = Color(UIColor(red: 189/255, green: 189/255, blue: 189/255, alpha: 1.0))
     
