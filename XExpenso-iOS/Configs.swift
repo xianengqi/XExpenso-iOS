@@ -31,16 +31,16 @@ let TRANS_TYPE_INCOME = "income"
 let TRANS_TYPE_EXPENSE = "expense"
 
 // Transaction tags
-let TRANS_TAG_TRANSPORT = "transport"
-let TRANS_TAG_FOOD = "food"
-let TRANS_TAG_HOUSING = "housing"
-let TRANS_TAG_INSURANCE = "insurance"
-let TRANS_TAG_MEDICAL = "medical"
-let TRANS_TAG_SAVINGS = "savings"
-let TRANS_TAG_PERSONAL = "personal"
-let TRANS_TAG_ENTERTAINMENT = "entertainment"
-let TRANS_TAG_OTHERS = "others"
-let TRANS_TAG_UTILITIES = "utilities"
+let TRANS_TAG_TRANSPORT = "运输"
+let TRANS_TAG_FOOD = "食物"
+let TRANS_TAG_HOUSING = "房子"
+let TRANS_TAG_INSURANCE = "保险"
+let TRANS_TAG_MEDICAL = "医疗"
+let TRANS_TAG_SAVINGS = "储蓄"
+let TRANS_TAG_PERSONAL = "个人"
+let TRANS_TAG_ENTERTAINMENT = "娱乐"
+let TRANS_TAG_OTHERS = "其他"
+let TRANS_TAG_UTILITIES = "公共"
 
 func getTransTagIcon(transTag: String) -> String {
     switch transTag {
