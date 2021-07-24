@@ -49,6 +49,92 @@ class AddExpenseViewModel: ObservableObject {
             self.imageAttached = UIImage(data: data)
         }
         
-       // AttachmentHandler
+        AttachmentHandler.shared.imagePickedBlock = { [weak self] image in
+            self?.imageUpdated = true
+            self?.imageAttached = image
+        }
+    }
+    
+    func getButtText() -> String {
+        if selectedType == TRANS_TYPE_INCOME { return "\(expenseObj == nil ? "添加" : "修改") 收入 " }
+        else if selectedType == TRANS_TAG_TRANSPORT { return "\(expenseObj == nil ? "添加" : "修改") 支出 " }
+        else { return "\(expenseObj == nil ? "添加" : "修改") 交易 " }
+    }
+    
+    func attachImage() {
+        AttachmentHandler.shared.showAttachmentActionSheet()
+    }
+    
+    func removeImage() {
+        imageAttached = nil
+    }
+    
+    func saveTransaction(managedObjectContext: NSManagedObjectContext) {
+        
+        let expense: XExpenseCD
+        let titleStr = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        let amountStr = amount.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if titleStr.isEmpty || titleStr == "" {
+            alertMsg = "输入标题"; showAlert = true
+            return
+        }
+        if amountStr.isEmpty || amountStr == "" {
+            alertMsg = "输入金额"; showAlert = true
+            return
+        }
+        guard let amount = Double(amountStr) else {
+            alertMsg = "输入有效数字"; showAlert = true
+            return
+        }
+        
+        if expenseObj != nil {
+            expense = expenseObj!
+            
+            if let image = imageAttached {
+                if imageUpdated {
+                    if let _ = expense.imageAttached {
+                         // Delete Previous Image from CoreData
+                    }
+                    expense.imageAttached = image.jpegData(compressionQuality: 1.0)
+                }
+            } else {
+                if let _ = expense.imageAttached {
+                    // Delete Previous Image from CoreData
+                }
+                expense.imageAttached = nil
+            }
+        } else {
+            expense = XExpenseCD(context: managedObjectContext)
+            expense.createdAt = Date()
+            if let image = imageAttached {
+                expense.imageAttached = image.jpegData(compressionQuality: 1.0)
+            }
+        }
+        expense.updateAt = Date()
+        expense.type = selectedType
+        expense.title = titleStr
+        expense.tag = selectedTag
+        expense.occuredOn = occuredOn
+        expense.note = note
+        expense.amount = amount
+        do {
+            try managedObjectContext.save()
+            closePresenter = true
+        } catch {
+            alertMsg = "\(error)"; showAlert = true
+        }
+    }
+    
+    func deleteTransaction(managedObjectContext: NSManagedObjectContext) {
+        guard let expenseObj = expenseObj else {
+            return
+        }
+        managedObjectContext.delete(expenseObj)
+        do {
+            try managedObjectContext.save(); closePresenter = true
+        } catch {
+            alertMsg = "\(error)"; showAlert = true
+        }
     }
 }
