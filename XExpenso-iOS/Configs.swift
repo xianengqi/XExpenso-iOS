@@ -60,7 +60,7 @@ func getTransTagIcon(transTag: String) -> String {
 
 func getTransTagTitle(transTag: String) -> String {
     switch transTag {
-        case TRANS_TAG_TRANSPORT: return "Transport"
+        case TRANS_TAG_TRANSPORT: return "类别"
         case TRANS_TAG_FOOD: return "Food"
         case TRANS_TAG_HOUSING: return "Housing"
         case TRANS_TAG_INSURANCE: return "Insurance"
