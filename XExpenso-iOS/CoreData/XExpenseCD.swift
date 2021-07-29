@@ -37,9 +37,17 @@ extension XExpenseCD {
     static func getAllExpenseData(sortBy: ExpenseCDSort = .occuredOn, ascending: Bool = true, filterTime: ExpenseCDFilterTime = .all) -> NSFetchRequest<XExpenseCD> {
         let request: NSFetchRequest<XExpenseCD> = XExpenseCD.fetchRequest() as! NSFetchRequest<XExpenseCD>
         let sortDescriptor = NSSortDescriptor(key: sortBy.rawValue, ascending: ascending)
-//        if filterTime == .week {
-//            let startDate: NSDate = Date().get
-//        }
+        if filterTime == .week {
+            let startDate: NSDate = Date().getLast7Day()! as NSDate
+            let endDate: NSDate = NSDate()
+            let predicate = NSPredicate(format: "occuredOn >= %@ AND occuredOn <= %@", startDate, endDate)
+            request.predicate = predicate
+        } else if filterTime == .month {
+            let startDate: NSDate = Date().getLast30Day()! as NSDate
+            let endDate: NSDate = NSDate()
+            let predicate = NSPredicate(format: "occuredOn >= %@ AND occuredOn <= %@", startDate, endDate)
+            request.predicate = predicate
+        }
         request.sortDescriptors = [sortDescriptor]
         return request
     }

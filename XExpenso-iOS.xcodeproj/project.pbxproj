@@ -18,6 +18,7 @@
 		C34452C726A82DB30016148E /* InterFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34452C626A82DB30016148E /* InterFontModifier.swift */; };
 		C34DFAED26B0114300F17D64 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DFAEC26B0114300F17D64 /* DropdownButton.swift */; };
 		C34DFAEF26B1737100F17D64 /* dismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DFAEE26B1737100F17D64 /* dismissKeyboard.swift */; };
+		C350BD5826B2BF4000C87091 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350BD5726B2BF4000C87091 /* DateExtension.swift */; };
 		C355BC6926A6DA2A004809CE /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BC6826A6DA2A004809CE /* AboutView.swift */; };
 		C355BC6E26A6DBA0004809CE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BC6D26A6DBA0004809CE /* ColorExtension.swift */; };
 		C355BC7026A6E177004809CE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BC6F26A6E177004809CE /* Models.swift */; };
@@ -52,6 +53,7 @@
 		C34452C626A82DB30016148E /* InterFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterFontModifier.swift; sourceTree = "<group>"; };
 		C34DFAEC26B0114300F17D64 /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
 		C34DFAEE26B1737100F17D64 /* dismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dismissKeyboard.swift; sourceTree = "<group>"; };
+		C350BD5726B2BF4000C87091 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		C355BC6826A6DA2A004809CE /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C355BC6D26A6DBA0004809CE /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		C355BC6F26A6E177004809CE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				C310390726AAD1F000D50697 /* AttachmentHandler.swift */,
 				C34DFAEC26B0114300F17D64 /* DropdownButton.swift */,
 				C34DFAEE26B1737100F17D64 /* dismissKeyboard.swift */,
+				C350BD5726B2BF4000C87091 /* DateExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				C34DFAEF26B1737100F17D64 /* dismissKeyboard.swift in Sources */,
 				C3CF5D8A26A987500076C6E7 /* XExpenseCD.swift in Sources */,
 				C310390626AACCC900D50697 /* AddExpenseViewModel.swift in Sources */,
+				C350BD5826B2BF4000C87091 /* DateExtension.swift in Sources */,
 				C30759A026A2EFDB00221FDA /* XExpensoApp.swift in Sources */,
 				C367AB5126A43C8D003C7284 /* XExpense.xcdatamodeld in Sources */,
 				C355BC6E26A6DBA0004809CE /* ColorExtension.swift in Sources */,
