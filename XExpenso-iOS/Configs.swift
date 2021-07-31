@@ -61,15 +61,15 @@ func getTransTagIcon(transTag: String) -> String {
 func getTransTagTitle(transTag: String) -> String {
     switch transTag {
         case TRANS_TAG_TRANSPORT: return "类别"
-        case TRANS_TAG_FOOD: return "Food"
-        case TRANS_TAG_HOUSING: return "Housing"
-        case TRANS_TAG_INSURANCE: return "Insurance"
-        case TRANS_TAG_MEDICAL: return "Medical"
-        case TRANS_TAG_SAVINGS: return "Savings"
-        case TRANS_TAG_PERSONAL: return "Personal"
-        case TRANS_TAG_ENTERTAINMENT: return "Entertainment"
-        case TRANS_TAG_OTHERS: return "Others"
-        case TRANS_TAG_UTILITIES: return "Utilities"
+        case TRANS_TAG_FOOD: return "食物"
+        case TRANS_TAG_HOUSING: return "住房"
+        case TRANS_TAG_INSURANCE: return "保险"
+        case TRANS_TAG_MEDICAL: return "医疗"
+        case TRANS_TAG_SAVINGS: return "储蓄"
+        case TRANS_TAG_PERSONAL: return "个人"
+        case TRANS_TAG_ENTERTAINMENT: return "娱乐"
+        case TRANS_TAG_OTHERS: return "其它"
+        case TRANS_TAG_UTILITIES: return "水电"
         default: return "Unknown"
     }
 }

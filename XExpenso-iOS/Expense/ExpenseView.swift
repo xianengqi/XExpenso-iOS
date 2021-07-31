@@ -97,9 +97,47 @@ struct ExpenseMainView: View {
                     TextView(text: "\(CURRENCY)\(getTotalBalance())", type: .h5)
                         .foregroundColor(Color.text_primary_color).padding(.bottom, 30)
                 }.frame(maxWidth: .infinity).background(Color.secondary_color).cornerRadius(4)
+                
+                HStack {
+                    TextView(text: "近期支出", type: .subtitle_1).foregroundColor(Color.text_primary_color)
+                    Spacer()
+                }.padding(4)
+                
+                ForEach(self.fetchRequest.wrappedValue) { expenseObj in
+                    NavigationLink(destination: ExpenseDetailView(expenseObj: expenseObj), label: {
+                        ExpenseTransView(expenseObj: expenseObj)})
+                }
             }
-        }
+            Spacer().frame(height: 150)
+            
+        }.padding(.horizontal, 8).padding(.top, 0)
     }
+}
+
+
+struct ExpenseTransView: View {
+    @ObservedObject var expenseObj: XExpenseCD
+    @AppStorage(UD_EXPENSE_CURRENCY) var CURRENCY: String = ""
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    TextView(text: expenseObj.title ?? "", type: .subtitle_1, lineLimit: 1).foregroundColor(Color.text_primary_color)
+                    Spacer()
+                    TextView(text: "\(expenseObj.type == TRANS_TYPE_INCOME ? "+" : "-")\(CURRENCY)\(expenseObj.amount)", type: .subtitle_1)
+                        .foregroundColor(expenseObj.type == TRANS_TYPE_INCOME ? Color.main_green : Color.main_red)
+                }
+                HStack {
+                    TextView(text: getTransTagTitle(transTag: expenseObj.tag ?? ""), type: .body_2).foregroundColor(Color.text_primary_color)
+                    Spacer()
+                    TextView(text: getDateFormatter(date: expenseObj.occuredOn, format: "MMM dd, yyyy"), type: .body_2).foregroundColor(Color.text_primary_color)
+                }
+            }.padding(.leading, 4)
+            Spacer()
+        }.padding(8).background(Color.secondary_color).cornerRadius(4)
+    }
+                             
 }
 
 struct ExpenseView_Previews: PreviewProvider {

@@ -22,6 +22,8 @@
 		C355BC6926A6DA2A004809CE /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BC6826A6DA2A004809CE /* AboutView.swift */; };
 		C355BC6E26A6DBA0004809CE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BC6D26A6DBA0004809CE /* ColorExtension.swift */; };
 		C355BC7026A6E177004809CE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BC6F26A6E177004809CE /* Models.swift */; };
+		C3627D7926B553A200608991 /* ExpenseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3627D7826B553A200608991 /* ExpenseDetailView.swift */; };
+		C3627D7B26B5545100608991 /* ExpenseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3627D7A26B5545100608991 /* ExpenseDetailViewModel.swift */; };
 		C367AB3226A42F37003C7284 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C367AB3126A42F36003C7284 /* Configs.swift */; };
 		C367AB3526A4387F003C7284 /* empty-face.json in Resources */ = {isa = PBXBuildFile; fileRef = C367AB3426A4387F003C7284 /* empty-face.json */; };
 		C367AB4126A438C9003C7284 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C367AB3726A438C9003C7284 /* Inter-Medium.ttf */; };
@@ -57,6 +59,8 @@
 		C355BC6826A6DA2A004809CE /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C355BC6D26A6DBA0004809CE /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		C355BC6F26A6E177004809CE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C3627D7826B553A200608991 /* ExpenseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailView.swift; sourceTree = "<group>"; };
+		C3627D7A26B5545100608991 /* ExpenseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailViewModel.swift; sourceTree = "<group>"; };
 		C367AB3126A42F36003C7284 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		C367AB3426A4387F003C7284 /* empty-face.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "empty-face.json"; sourceTree = "<group>"; };
 		C367AB3726A438C9003C7284 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				C367AB3626A438C9003C7284 /* Inter */,
 				C367AB3326A4387F003C7284 /* Animations */,
 				C3CF5D8826A9872D0076C6E7 /* CoreData */,
+				C3627D7726B5536000608991 /* ExpenseDetailed */,
 				C355BC6A26A6DB6E004809CE /* Helpers */,
 				C355BC6726A6DA0C004809CE /* About */,
 				C355BC6626A6D9C0004809CE /* ExpenseSettings */,
@@ -181,6 +186,15 @@
 				C350BD5726B2BF4000C87091 /* DateExtension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C3627D7726B5536000608991 /* ExpenseDetailed */ = {
+			isa = PBXGroup;
+			children = (
+				C3627D7826B553A200608991 /* ExpenseDetailView.swift */,
+				C3627D7A26B5545100608991 /* ExpenseDetailViewModel.swift */,
+			);
+			path = ExpenseDetailed;
 			sourceTree = "<group>";
 		};
 		C367AB3326A4387F003C7284 /* Animations */ = {
@@ -363,9 +377,11 @@
 				C34452C726A82DB30016148E /* InterFontModifier.swift in Sources */,
 				C30759A226A2EFDB00221FDA /* ExpenseView.swift in Sources */,
 				C34452C526A82C3E0016148E /* TextView.swift in Sources */,
+				C3627D7926B553A200608991 /* ExpenseDetailView.swift in Sources */,
 				C34DFAEF26B1737100F17D64 /* dismissKeyboard.swift in Sources */,
 				C3CF5D8A26A987500076C6E7 /* XExpenseCD.swift in Sources */,
 				C310390626AACCC900D50697 /* AddExpenseViewModel.swift in Sources */,
+				C3627D7B26B5545100608991 /* ExpenseDetailViewModel.swift in Sources */,
 				C350BD5826B2BF4000C87091 /* DateExtension.swift in Sources */,
 				C30759A026A2EFDB00221FDA /* XExpensoApp.swift in Sources */,
 				C367AB5126A43C8D003C7284 /* XExpense.xcdatamodeld in Sources */,
